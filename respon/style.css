@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+.con {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+h1 {
+  background-color: blue;
+}
+@media only screen and (max-width: 992px) and (min-width: 600px) {
+  h1 {
+    background-color: red;
+  }
+  .con {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    background-color: green;
+  }
+  .con {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
