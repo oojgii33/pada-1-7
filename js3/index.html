@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let array = [111, 2, 31, 4, 51, 6, 7];
+      //   for (let i = 0; i < 101; i = i + 2) {
+      //     console.log("tegsh too =", i);
+      //   }
+      //   let max = 0;
+
+      //   for (let d = 0; d < array.length; d++) {
+      //     if (max < array[d]) {
+      //       max = array[d];
+      //     }
+      //   }
+      //   console.log("max too =", max);
+      space = " ";
+
+      for (let l = 0; l < 6; l++) {
+        row = "";
+        row1 = "";
+        for (let c = 0; c < l; c++) {
+          row += "*";
+        }
+        for (let t = 4 - l; t >= 0; t--) {
+          space += " ";
+        }
+        for (let c = -1; c < l; c++) {
+          row1 += "*";
+        }
+        // for (let k = 5; k > 0; k--) {
+        //   space -= " ";
+        // }
+        console.log(space + row + row1);
+        space = " ";
+      }
+      let i = 1;
+      while (i <= 100) {
+        console.log(i);
+        i = i + 2;
+      }
+      let b = "";
+      let a = "uddu";
+      let newword = a;
+      for (let i = a.length - 1; i >= 0; i--) {
+        b = b + a[i];
+      }
+      if (newword === b) {
+        console.log("mon");
+      } else console.log("bish");
+    </script>
+  </body>
+</html>

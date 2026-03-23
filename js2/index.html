@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      //   let age = 25;
+      //   // Number
+      //   let name = "Alice";
+      //   // String
+      //   let isStudent = true;
+      //   // Boolean
+      //   let address;
+      //   // Undefined
+      //   let salary = null;
+      //   // Null
+      //   let person = { firstName: "John", lastName: "Doe" };
+      //   //Object
+      //   let numbers = [1, 2, 3, 4, 5];
+      //   //Array
+      //   function greet(name) {
+      //     return "Hellow,${name}! ";
+      //   }
+      //   //Function
+      //   let user = null;
+      //   // Null
+      //   user = {
+      //     name: "Uno",
+      //     age: 25,
+      //     email: "Unumunkh.ganhuyg@gmail.com",
+      //     address: "UB",
+      //   };
+      //   //Object
+      //   let session = { id: "ne01211319", isActive: true };
+      //   //Object
+      //   session = null;
+      //   // Null
+      //   let colors = [red, blue, green, purple, white, black];
+      //   // Array
+      //   let fruits = [banana, orange, apple, watermelon, blueberry];
+      //   // Array
+      //   let me = { firstname, lastname, email, hobby, gender };
+      //   // Object
+      //   let number = [1, 2, 3];
+      let max;
+      function maxNum(a, b, c, d) {
+        let max = a;
+        if (b > max) {
+          max = b;
+        }
+        if (c > max) {
+          max = c;
+        }
+        if (d > max) {
+          max = d;
+        }
+        return max;
+      }
+      console.log("Max too olon", maxNum(300, 211, 312, 1234));
+      //Max too olon
+      function minNum(z, x, y, v) {
+        console.log(Math.min(z, x, y, v));
+      }
+      minNum(1, 2, 3, 4);
+      // Min too olon
+      function zow(a) {
+        let lastdigit = 0;
+        let firstnum = a;
+        let newnum = 0;
+        while (a >= 10) {
+          lastdigit = a % 10;
+          newnum = newnum * 10 + lastdigit;
+          a = (a - lastdigit) / 10;
+        }
+        newnum = newnum * 10 + a;
+        console.log("asdasdasdas", a, newnum);
+
+        if (firstnum === newnum) {
+          console.log("mon");
+        } else console.log("bish");
+      }
+      zow(626);
+    </script>
+  </body>
+</html>

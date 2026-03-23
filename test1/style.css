@@ -1,0 +1,40 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.box {
+  display: flex;
+  width: 1000px;
+  height: 1000px;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+div {
+  height: 50px;
+  width: 300px;
+  background-color: black;
+  border-radius: 30px;
+  transition: transform 2s;
+}
+.a2 {
+  transition:
+    transform 2s,
+    width 1s;
+  animation: b1 3s linear 0s 1 direction fill-mode;
+}
+.box:hover .a1 {
+  transform: translate(0px, 60px) rotate(45deg);
+  background-color: red;
+}
+.box:hover .a3 {
+  transform: translate(0px, -60px) rotate(-45deg);
+  background-color: purple;
+}
+.box:hover .a2 {
+  transform: rotate(360deg);
+  width: 0px;
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input type="text" id="first" onkeydown="enter(event)" />
+    <input type="text" id="second" onkeydown="enter(event)" />
+    <span>=</span>
+    <span id="result"></span>
+    <br />
+
+    <button onclick="Minus()">-</button>
+    <button onclick="Plus()">+</button>
+    <button onclick="Multi()">*</button>
+    <button onclick="Dived()">/</button>
+    <button onclick="Show()">show</button>
+
+    <div id="result1"></div>
+
+    <script>
+      let second = document.getElementById("first");
+      let first = document.getElementById("second");
+      let result = document.getElementById("result");
+      let result1 = document.getElementById("result1");
+
+      let number = [];
+
+      const Plus = () => {
+        let ab = parseInt(second.value) + parseInt(first.value);
+        result.innerHTML = ab;
+
+        number.push(`${second.value} + ${first.value} = ${ab}`);
+      };
+      function enter(e) {
+        if (e.key === "Enter") {
+          Plus();
+        }
+      }
+
+      const Minus = () => {
+        let ab = parseInt(second.value) - parseInt(first.value);
+        result.innerHTML = ab;
+
+        number.push(`${second.value} - ${first.value} = ${ab}`);
+      };
+
+      const Multi = () => {
+        let ab = parseInt(second.value) * parseInt(first.value);
+        result.innerHTML = ab;
+
+        number.push(`${second.value} * ${first.value} = ${ab}`);
+      };
+
+      const Dived = () => {
+        let ab = parseInt(second.value) / parseInt(first.value);
+        result.innerHTML = ab;
+
+        number.push(`${second.value} / ${first.value} = ${ab}`);
+      };
+
+      const Show = () => {
+        result1.innerHTML = "";
+
+        number.forEach((item) => {
+          const div = document.createElement("div");
+          div.textContent = item;
+          result1.appendChild(div);
+        });
+      };
+    </script>
+  </body>
+</html>

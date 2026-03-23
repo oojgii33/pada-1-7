@@ -1,0 +1,28 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container :nth-child(1) {
+  width: 200px;
+  height: 130px;
+  border-radius: 0px 0px 60% 60%;
+  background-color: orange;
+  border: 3px solid black;
+}
+.container :nth-child(2) {
+  width: 50px;
+  height: 100px;
+  background-color: orange;
+  transform: matrix(0.7, 0.7, -0.7, 0.7, 80, 80);
+}
+.container :nth-child(3) {
+}
+.container :nth-child(4) {
+}
+.container :nth-child(5) {
+}
+.container :nth-child(6) {
+}

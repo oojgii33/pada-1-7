@@ -1,0 +1,95 @@
+.box {
+  width: 400px;
+  height: 600px;
+  background-color: #547792;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 10px solid black;
+  border-right: 10px solid black;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+  border-radius: 10px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(https://image.slidesdocs.com/responsive-images/background/pink-mathematics-cute-education-rubber-blank-paper-powerpoint-background_985c67841c__960_540.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dotor {
+  background-color: #fab95b;
+  width: 86px;
+  border-radius: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  font-size: 24px;
+  color: white;
+  padding: 15px 30px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 5px rgb(181, 100, 1);
+  transition: all 0.3s ease;  
+}
+.dotor:active {
+  transform: translateY(5px); /* доош дарна */
+  box-shadow: 0 0; /* сүүдэр алга болно */
+}
+.dood {
+  width: 380px;
+  height: 450px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  color: white;
+}
+.deed {
+  width: 360px;
+  height: 100px;
+  background-color: #e8e2db;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  font-size: xx-large;
+  text-align: end;
+}
+#tentsuu {
+  grid-row-start: 4;
+  grid-row-end: 6;
+  border-radius: 10px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  font-size: xx-large;
+}
+img {
+  width: 38px;
+  height: 38px;
+}
+.dotor:nth-of-type(1) {
+  color: #1a3263;
+}
+.dotor:nth-of-type(2) {
+  color: #1a3263;
+}
+.dotor:nth-of-type(3) {
+  color: #1a3263;
+}
+.dotor:nth-of-type(16) {
+  color: #1a3263;
+}
+.dotor:nth-last-of-type(8) {
+  color: #1a3263;
+}
+.dotor:nth-last-of-type(12) {
+  color: #1a3263;
+}
+input {
+  border: 3px solid black;
+}

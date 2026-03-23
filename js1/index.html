@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      //   for (let index = 1; index == r * r; index++) {
+      //     console.log(index);
+      //   }
+      //   for (let x = 1; x <= 1000; x++) {
+      //     for (let y = 1; y <= x; y++) {
+      //       if (x / y === y) {
+      //         console.log(x);
+      //       }
+      //     }
+      //   }
+      //   x ? console.log(true) : console.log(false);
+      //   let x = 1;
+      //   let y = 2;
+      //   let z = 3;
+      //   while (x > y && x > z) {
+      //     if (x > y && x > z) {
+      //       console.log(x, y, z);
+      //     } else if (y > z) {
+      //       x = y;
+      //       y = x;
+      //     } else {
+      //       y = z;
+      //       z = y;
+      //     }
+      //   }
+      let i = 0;
+      for (let g = 1; g <= 1000; g++) {
+        for (let d = 1; d <= g; d++) {
+          if (g % d === 0) {
+            i++;
+          }
+        }
+        if (i === 2) {
+          console.log(g);
+        }
+        i = 0;
+      }
+
+      //   x = x * 2;
+      //   let a = true;
+      //   let b = false;
+      //   console.log(x * y + z);
+      //   document.getElementById("demo").innerHTML = x;
+
+      //   let x = 100;
+      //   let y = 200;
+      //   let z = 30000;
+      //   let d = 4000;
+      //   if (x > y) {
+      //     if (x > z) {
+      //       if (x > d) {
+      //         console.log(x);
+      //       } else {
+      //         console.log(d);
+      //       }
+      //     } else if (z > y) {
+      //       if (z > d) {
+      //         console.log(z);
+      //       } else {
+      //         console.log(d);
+      //       }
+      //     } else if (y > d) {
+      //       console.log(y);
+      //     } else {
+      //       console.log(d);
+      //     }
+      //   } else if (y > z) {
+      //     if (y > d) {
+      //       console.log(y);
+      //     } else {
+      //       console.log(z);
+      //     }
+      //   } else if (z > d) {
+      //     console.log(z);
+      //   } else {
+      //     console.log(d);
+      //   }
+
+      //   if (a) {
+      //     console.log(true);
+      //   } else {
+      //     console.log(false);
+      //   }
+    </script>
+  </body>
+</html>
