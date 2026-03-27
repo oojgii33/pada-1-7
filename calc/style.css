@@ -36,7 +36,7 @@ body {
   cursor: pointer;
   border: none;
   box-shadow: 0 5px rgb(181, 100, 1);
-  transition: all 0.3s ease;  
+  transition: all 0.3s ease;
 }
 .dotor:active {
   transform: translateY(5px); /* доош дарна */
